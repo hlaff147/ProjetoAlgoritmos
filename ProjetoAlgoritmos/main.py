@@ -11,6 +11,13 @@ c1 = df['county1'].tolist()
 distance = df['mi_to_county'].tolist()
 c2 = df['county2'].tolist()
 
+
+for i in range(0, len(c1)-1):
+    dicg[int(c1[i])] = {}
+for i in range(0,len(c1)-1):
+    dicg[int(c1[i])][int(c2[i])] = distance[i]
+
+
 for i in range(0, len(c1)-1):
     dicg[int(c1[i])] = {}
 for i in range(0,len(c1)-1):
@@ -18,8 +25,9 @@ for i in range(0,len(c1)-1):
 
 
 
-print(data_names)
+
 print("Escolha duas cidades(informando seu respectivo código) e saiba qual menor trajeto e sua distancia.")
-cid1 = int(input("Qual a primeira cidade?"))
-cid2 = int(input("Qual a segunda cidade?"))
+cid1 = int(input("Qual o primeiro condado?"))
+cid2 = int(input("Qual o segundo condado?"))
+
 dj.dijkstra_path(dicg, cid1, cid2)
