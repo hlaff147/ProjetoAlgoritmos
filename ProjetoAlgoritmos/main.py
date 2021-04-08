@@ -2,8 +2,8 @@ import pandas as pd
 import Dijkstra as dj
 
 
-data_distance = pd.read_csv (r'C:\Users\betin\OneDrive\Área de Trabalho\ProjetoAlgoritmos\CountyDistances.csv')
-data_names = pd.read_csv (r'C:\Users\betin\OneDrive\Área de Trabalho\ProjetoAlgoritmos\CountyNames.csv')
+data_distance = pd.read_csv (r'C:\Users\Wagner Bernardo\Creative Cloud Files\everything\meus programinhas\algoritmo\projetoalg\ProjetoAlgoritmos\ProjetoAlgoritmos\CountyDistances.csv', encoding='latin-1')
+data_names = pd.read_csv (r'C:\Users\Wagner Bernardo\Creative Cloud Files\everything\meus programinhas\algoritmo\projetoalg\ProjetoAlgoritmos\ProjetoAlgoritmos\CountyNames.csv', encoding='latin-1')
 df = pd.DataFrame(data_distance, columns= ['county1','mi_to_county','county2'])
 
 dicg = {}
@@ -11,19 +11,11 @@ c1 = df['county1'].tolist()
 distance = df['mi_to_county'].tolist()
 c2 = df['county2'].tolist()
 
-# for i in c1:
-#     dicg[int(i)] = {}
-#     a = df.query(f'county1 == {i}')
-
-#     for ind, j in a.iterrows():
-#         dicg[i][int(j['county2'])] = j['mi_to_county']
 for i in range(0, len(c1)-1):
     dicg[int(c1[i])] = {}
 for i in range(0,len(c1)-1):
     dicg[int(c1[i])][int(c2[i])] = distance[i]
 
-
-# print(dicg)
 
 
 print(data_names)

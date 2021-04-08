@@ -1,3 +1,4 @@
+import streamlit as st
 def dijkstra(grafo, origem): #retorna a menor distancia de um dado nó para todos os outros possíveis.
 
     controle = { }
@@ -66,8 +67,10 @@ def dijkstra_path(grafo, origem, fim): #retorna a menor distancia de um No orige
         naoVisitados.remove(atual)
         del controle[atual]
 
-    print("A menor distância de %s atá %s é: %s" % (origem, fim, distanciaAtual[fim][0]))
-    print("O menor caminho é: %s" % printPath(distanciaAtual,origem, fim))          
+    st.balloons()
+    st.success("Aqui estão os resultados:")
+    st.write("A menor distância de %s até %s é: %s" % (origem, fim, distanciaAtual[fim][0]))
+    st.write("O menor caminho é: %s" % printPath(distanciaAtual,origem, fim))          
     
 
 def printPath(distancias,inicio, fim):
