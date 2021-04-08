@@ -6,6 +6,7 @@
 
 ## 💻 Tecnologias utilizadas:
 * Python
+* Pandas
 * Streamlit
 
 
