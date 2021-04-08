@@ -12,11 +12,6 @@ distance = df['mi_to_county'].tolist()
 c2 = df['county2'].tolist()
 
 
-for i in range(0, len(c1)-1):
-    dicg[int(c1[i])] = {}
-for i in range(0,len(c1)-1):
-    dicg[int(c1[i])][int(c2[i])] = distance[i]
-
 
 for i in range(0, len(c1)-1):
     dicg[int(c1[i])] = {}
@@ -27,6 +22,7 @@ for i in range(0,len(c1)-1):
 
 
 print("Escolha duas cidades(informando seu respectivo código) e saiba qual menor trajeto e sua distancia.")
+<<<<<<< HEAD
 cid1 = int(input("Qual o primeiro condado?"))
 cid2 = int(input("Qual o segundo condado?"))
 
