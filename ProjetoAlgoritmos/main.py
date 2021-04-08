@@ -7,16 +7,24 @@ data_names = pd.read_csv (r'C:\Users\betin\OneDrive\Área de Trabalho\ProjetoAlg
 df = pd.DataFrame(data_distance, columns= ['county1','mi_to_county','county2'])
 
 dicg = {}
-c1 = df['county1'].unique().tolist()
-distance = df['mi_to_county'].unique().tolist()
-c2 = df['county2'].unique().tolist()
+c1 = df['county1'].tolist()
+distance = df['mi_to_county'].tolist()
+c2 = df['county2'].tolist()
 
-for i in c1:
-    dicg[i] = {}
-    a = df.query(f'county1 == {i}')
+# for i in c1:
+#     dicg[int(i)] = {}
+#     a = df.query(f'county1 == {i}')
 
-    for ind, j in a.iterrows():
-        dicg[i][int(j['county2'])] = j['mi_to_county']
+#     for ind, j in a.iterrows():
+#         dicg[i][int(j['county2'])] = j['mi_to_county']
+for i in range(0, len(c1)-1):
+    dicg[int(c1[i])] = {}
+for i in range(0,len(c1)-1):
+    dicg[int(c1[i])][int(c2[i])] = distance[i]
+
+
+# print(dicg)
+
 
 print(data_names)
 print("Escolha duas cidades(informando seu respectivo código) e saiba qual menor trajeto e sua distancia.")
