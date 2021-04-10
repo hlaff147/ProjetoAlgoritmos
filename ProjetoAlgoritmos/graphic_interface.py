@@ -45,4 +45,4 @@ user_input1 = st.text_area("Qual o segundo condado?")
 if st.button('Enviar'):
     result = int(user_input)
     result1 = int(user_input1)
-    dj.dijkstra_path(dicg, result, result1)
+    dj.dijkstra(dicg, result, result1)
