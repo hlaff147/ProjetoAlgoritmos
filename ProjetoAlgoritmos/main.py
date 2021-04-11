@@ -13,12 +13,12 @@ st.write('Fonte do banco de dados: https://www.nber.org/research/data/county-dis
 
 @st.cache
 def data_distance1():
-    data_distance = pd.read_csv (r'C:\Users\Wagner Bernardo\Creative Cloud Files\everything\meus programinhas\algoritmo\projetoalg\ProjetoAlgoritmos\ProjetoAlgoritmos\CountyDistances.csv', encoding='latin-1')
+    data_distance = pd.read_csv (r'../CountyDistances.csv', encoding='latin-1')
     return data_distance
 
 @st.cache
 def data_names1():
-    data_names = pd.read_csv (r'C:\Users\Wagner Bernardo\Creative Cloud Files\everything\meus programinhas\algoritmo\projetoalg\ProjetoAlgoritmos\ProjetoAlgoritmos\CountyNames.csv', encoding='latin-1')
+    data_names = pd.read_csv (r'../CountyNames.csv', encoding='latin-1')
     return data_names
 
 data = data_names1()
