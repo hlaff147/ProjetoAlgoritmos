@@ -14,7 +14,7 @@
 * Foi utilizado o programa Streamlit para a construção da interface gráfica
 ![Screenshot 2021-04-08 162425](https://user-images.githubusercontent.com/70080558/114085076-458ff000-9887-11eb-8aa1-14b2630862a1.png)
 ![Screenshot 2021-04-08 162453](https://user-images.githubusercontent.com/70080558/114085099-4c1e6780-9887-11eb-9c57-cbdde714fbde.png)
-![Screenshot 2021-04-08 162655](https://user-images.githubusercontent.com/70080558/114085157-5e000a80-9887-11eb-97f4-d8d570e7c4f7.png)
+![new](https://user-images.githubusercontent.com/70080558/114313983-3602e800-9acf-11eb-886c-f35326116800.png)
 
 
 ## 📥 Executar esse projeto no seu computador
