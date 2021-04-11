@@ -36,7 +36,7 @@ def dijkstra(grafo, origem, fim):
 
     st.balloons()
     st.success("Aqui estão os resultados:")
-    st.write("A menor distância de %s até %s é: %s" % (origem, fim, distancia[fim][0]))
+    st.write("A menor distância de %s até %s é: %smi" % (origem, fim, distancia[fim][0]))
     st.write("O menor caminho é: %s" % print_caminho(distancia,origem, fim))          
     
 
