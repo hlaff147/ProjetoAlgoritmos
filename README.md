@@ -22,3 +22,6 @@
 - Para executar o site é necessário ter o Streamlit na sua máquina. Para instalar, abra o terminal do seu computador e digite o comando `pip install streamlit`
 - Em seguida, clone o repositório e, no local do arquivo, digite o comando, de novo no terminal,  `streamlit run main.py`. O site abrirá automaticamente e estará
 pronto para uso.
+
+## ❗ P.S.
+Se você não conseguir rodar a aplicação, observe a path dos arquivos da base de dados (os arquivos csv's), e mude-a para o endereço correto do seu computador.
