@@ -20,5 +20,5 @@
 ## 📥 Executar esse projeto no seu computador
 
 - Para executar o site é necessário ter o Streamlit na sua máquina. Para instalar, abra o terminal do seu computador e digite o comando `pip install streamlit`
-- Em seguida, clone o repositório e, no local do arquivo, digite o comando, de novo no terminal,  `streamlit run graphic_interface.py`. O site abrirá automaticamente e estará
+- Em seguida, clone o repositório e, no local do arquivo, digite o comando, de novo no terminal,  `streamlit run main.py`. O site abrirá automaticamente e estará
 pronto para uso.
